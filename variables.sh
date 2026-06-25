@@ -1,9 +1,9 @@
 #!/bin/bash
 
-$variable1=Suresh;
-$variable2=Ramesh;
-$variable3=John;
-$variable4=Smith;
+variable1=Suresh;
+variable2=Ramesh;
+variable3=John;
+variable4=Smith;
 
 
 $variable1="Hello, World!"
