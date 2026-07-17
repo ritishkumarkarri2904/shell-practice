@@ -4,7 +4,7 @@ PERSON1="$1"
 PERSON2="$2"
 PERSON3="$3"
 
-echo "${PERSON1} : Hi ra How are you? $PERSON2 $PERSON3"
+echo "${PERSON1} : Hi ra How are you all? ${PERSON2} ${PERSON3}"
 echo "${PERSON2} : I am fine how are you ${PERSON1}"
 echo "${PERSON3} : How are you guys doing ${PERSON2}"
 echo "${PERSON1} : I am doing good ${PERSON2}"
