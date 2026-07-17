@@ -7,3 +7,4 @@ echo "your username is $Username"
 
 echo "pls enter your paswword"
 read -s password
+echo "your secret password is $password"
