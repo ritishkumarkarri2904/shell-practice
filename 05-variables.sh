@@ -11,6 +11,3 @@ echo "your username is $Username"
 echo "pls enter your paswword"
 read -s password
 
-echo your PID is $$
-
-echo your script name is $0
