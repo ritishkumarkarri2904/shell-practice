@@ -13,6 +13,7 @@ echo "Home directory of the user: $HOME"
 sleep 20 &
 echo "PID of the last background command: $!"
 echo "All the arguments passed to the script as a single string: $*"
+echo " the exit status of the last command executed in the background: $?" # very important command
 
 # $@ Vs $* in bash scripting
 # $@ treats args as separate quoted strings, while $* treats them as a single string.
