@@ -8,6 +8,6 @@ if [ $NUMBER -gt 20 ]; then
 elif [ $NUMBER -eq 20 ]; then
     echo "the given $NUMBER is equal to 20"
 
-else [ $NUMBER -lt 20 ]; then
+else 
     echo "the given $NUMBER is less than 20"
 fi
