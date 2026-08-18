@@ -2,6 +2,8 @@
 
 set -e # Exit on any error
 
+#!/bin/bash
+
 USERID=$(id -u)
 LOGS_FOLDER="/var/logs/shell-script"
 LOGS_FILE="/var/logs/shell-script/$0.log"
