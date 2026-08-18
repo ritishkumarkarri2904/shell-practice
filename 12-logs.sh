@@ -6,7 +6,7 @@ LOGS_FILE="/var/logs/shell-script/$0.log"
 
 
 if [ $USERID -ne 0 ]; then
-    echo "Please run this script as root or with sudo privileges."
+    echo "Please run this script as root or with sudo privileges." | tee -a $LOGS_FILE
     exit 1
 fi
 
@@ -15,15 +15,15 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE () {
 if [ $1 -ne 0 ]; then
-    echo "Installing $2 is failure"
+    echo "Installing $2 is failure" | tee -a $LOGS_FILE
     exit 1
 else
-    echo "Installing $2 is successful"
+    echo "Installing $2 is successful" | tee -a $LOGS_FILE
 fi
 
 }
 
-dnf install -y nginx &>> $LOGS_FILE
+dnf install -y nginx &>> $LOGS_FILE 
 VALIDATE $? "Nginx"
 
 dnf install -y mysql-server &>> $LOGS_FILE
