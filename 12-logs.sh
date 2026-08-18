@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-LOGS_Folder="/var/logs/shell-script"
+LOGS_FOLDER="/var/logs/shell-script"
 LOGS_FILE="/var/logs/shell-script/$0.log"
 
 
@@ -11,7 +11,7 @@ if [ $USERID -ne 0 ]; then
 fi
 
 #create logs folder if not exists
-mkdir -p $LOGS_Folder
+mkdir -p $LOGS_FOLDER
 
 VALIDATE () {
 if [ $1 -ne 0 ]; then
