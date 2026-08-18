@@ -31,9 +31,9 @@ fi
 for package in $@
 do
     if [ $? -eq 0 ]; then
-    echo -e "$package is already installed,$Y skipping installation $N"
+    echo -e " $G $package is already installed $N,$Y skipping installation $N"
 else
-    echo "$package not installed, installing now"
+    echo -e " $Y $package not installed, installing now $N"
     dnf install -y $package
     VALIDATE $? "$package Installation"
 fi    
