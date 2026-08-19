@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e #ERR # Exit on any error
+#set -e #ERR # Exit on any error
 
 trap 'echo "Error: Script failed at line $LINENO, command: $BASH_COMMAND"' ERR
 
