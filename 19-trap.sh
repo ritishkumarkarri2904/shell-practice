@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sety -e # Exit on any error
+set -e # Exit on any error
 
 echo "My mother is best"
 echo "she will be happy to see me"
