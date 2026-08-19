@@ -24,8 +24,10 @@ mkdir -p $LOGS_FOLDER
 
 for package in $@
 do
+    dnf list installed $package &>> $LOGS_FILE
     if [ $? -eq 0 ]; then
-    echo -e " $G $package is already installed $N,$Y skipping installation $N"
+    echo -e " $G $package not installed $N,$Y installing now $N"
+    dnf install -y $package &>> $LOGS_FILE
 else
     echo -e " $Y $package not installed, installing now $N"
     dnf install -y $package
